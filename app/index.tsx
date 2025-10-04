@@ -6,7 +6,11 @@ export default function Page() {
 
 	return (
 		<Stack.Navigator>
-			<Stack.Screen name="Home" component={() => <Home />} options={{ headerShown: false }} />
+			<Stack.Screen
+				name="Home"
+				component={() => <Home />}
+				options={{ headerShown: false }}
+			/>
 		</Stack.Navigator>
 	);
 }
