@@ -12,6 +12,8 @@
 		"format": "npx prettier . --write"
 	},
 	"dependencies": {
+		"@emotion/native": "^11.11.0",
+		"@emotion/react": "^11.14.0",
 		"@expo/vector-icons": "^15.0.2",
 		"@radix-ui/react-dialog": "^1.1.15",
 		"@react-navigation/bottom-tabs": "^7.4.0",
