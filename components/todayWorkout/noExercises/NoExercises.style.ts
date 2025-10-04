@@ -12,7 +12,7 @@ export const Container = styled(View)`
 
 export const HeaderWrapper = styled(View)`
 	gap: ${spacing(6)};
-`
+`;
 
 export const Header = styled(Text)`
 	color: ${colors.header};
@@ -33,10 +33,10 @@ export const StyledTouchableOpacity = styled(TouchableOpacity)`
 	border-radius: ${radii.sm};
 	padding-inline: ${spacing(8)};
 	padding-block: ${spacing(3)};
-`
+`;
 
 export const ButtonText = styled(Text)`
 	color: white;
 	font-size: 16px;
 	font-weight: 500;
-`
+`;

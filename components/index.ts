@@ -1,1 +1,2 @@
-export { TodayWorkout } from './todayWorkout';
+export { TodayWorkout } from "./todayWorkout";
+export { Streak } from "./streak";

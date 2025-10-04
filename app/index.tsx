@@ -1,19 +1,12 @@
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { TodayWorkout } from "@/components";
-import {colors, spacing } from '@/constants';
-import styled from '@emotion/native';
-
-const StyledSafeAreaView = styled(SafeAreaView)`
-	background: ${colors.appBackground};
-	flex: 1;
-	padding: ${spacing(6)};
-	gap: ${spacing(5)};
-`
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Home } from "@/screens";
 
 export default function Page() {
+	const Stack = createNativeStackNavigator();
+
 	return (
-		<StyledSafeAreaView>
-			<TodayWorkout exercises={[]} />
-		</StyledSafeAreaView>
+		<Stack.Navigator>
+			<Stack.Screen name="Home" component={() => <Home />} options={{ headerShown: false }} />
+		</Stack.Navigator>
 	);
 }
